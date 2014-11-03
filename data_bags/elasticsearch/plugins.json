@@ -1,0 +1,11 @@
+{
+    "id": "plugins",
+    "_default": {
+        "plugins": {
+        	"elasticsearch/marvel/latest": {},
+        	"polyfractal/elasticsearch-inquisitor": {},
+            "elasticsearch/elasticsearch-analysis-kuromoji": { "version": "2.0.0" },
+            "royrusso/elasticsearch-HQ": {}
+        }
+    }
+}
