@@ -1,6 +1,9 @@
 DEPENDENCIES
   apt
   elasticsearch
+  kibana
+    git: git://github.com/mtakagi/kibana.git
+    revision: d256d363674e1f9980e70341b24903837510268e
   nginx
 
 GRAPH
@@ -22,6 +25,8 @@ GRAPH
     monit (>= 0.0.0)
     xml (>= 0.0.0)
   java (1.28.0)
+  kibana (0.1.0)
+    ark (>= 0.0.0)
   monit (0.7.5)
   nginx (2.7.4)
     apt (~> 2.2)
