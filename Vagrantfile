@@ -88,7 +88,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # some recipes and/or roles.
   
   config.vm.provision :chef_solo do |chef|
-    chef.run_list = ["apt", "elasticsearch", "kibana"]
+    chef.run_list = ["apt", "elasticsearch", "nginx", "kibana"]
     chef.roles_path = "roles"
     chef.add_role("elasticsearch")
     chef.data_bags_path = "data_bags"
